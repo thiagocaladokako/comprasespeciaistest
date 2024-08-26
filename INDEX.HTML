@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Página HTML</title>
+    <style>
+        h1 {
+            text-align: center;
+            /* Centraliza o texto */
+            width: 100%;
+            /* Define a largura como 100% para se adaptar à largura da tela */
+        }
+    </style>
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+
+        <style>
+            body {
+
+                font-family: Arial, sans-serif;
+
+                margin: 2px;
+
+                color: orange;
+
+                font-weight: bold;
+
+            }
+
+            css Copiar form {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2px;
+            }
+
+            label {
+                flex: 1 1 100%;
+                margin-bottom: 5px;
+                color: rgba(10, 5, 70, 0.785);
+                font-weight: bold;
+            }
+
+            input {
+                flex: 1 1 calc(50% - 20px);
+                padding: 10px;
+                margin-bottom: 14px;
+                font-size: 14px;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+
+            @media (max-width: 600px) {
+                input {
+                    flex: 1 1 100%;
+                }
+            }
+        </style>
+
+
+
+        <h1>SOLICITAÇÃO COTAÇÃO COMPRAS ESPECIAIS</h1>
+
+
+        <form action="index.html" style="display: flex; flex-wrap: wrap;">
+            <div style="flex: 1 1 100%;">
+                <label for="vendedor">Vendedor Solicitante:</label>
+                <input name='vendedor' id='vendedor' type="text" placeholder="Kako Calado" style="width: 100px;">
+
+                <label for="email.vendedor">Email Vendedor:</label>
+                <input name='email.vendedor' id='email.vendedor' type='email'
+                    placeholder="KakoCalado@renascermercantil.com.br" style="width: 330px;">
+
+                <label for="whatsapp.vendedor">Whatsapp Vendedor:</label>
+                <input name='whatsapp.vendedor' id='whatsapp.vendedor' type='number' placeholder="81991939999"
+                    style="width: 100px;">
+
+                <label for="cod.rota">Código Rota Vendedor:</label>
+                <input name='cod.rota' id='cod.rota' type="number" placeholder="78" style="width: 40px;">
+
+            </div>
+
+            <div style="flex: 1 1 100%;">
+
+                <label for="cod.cliente">Código Interno Cliente:</label>
+                <input name='cod.Cliente' id='Cod.Cliente' type="number" placeholder="123456" style="width: 75px;">
+
+                <label for="cliente">Cliente:</label>
+                <input name='Cliente' id='Cliente' type="text" placeholder="Atacarejo" style="width: 330px;">
+
+                <label for="departamento">Departamento:</label>
+                <input name='departamento' id='departamento' type="text" placeholder="Indústria" style="width: 75px;">
+
+                <label for="rota">Rota Vendedor:</label>
+                <input name='rota' id='rota' type="text" placeholder="Edson & Diógenes">
+
+            </div>
+
+            <div style="flex: 1 1 100%;">
+                <label for="faturamento.uf">Faturamento Dentro ou Fora do Estado:</label>
+                <input name='faturamento.uf' id='faturamento.uf' type="text" placeholder="dentro" style="width: 40px;">
+
+                <label for="fator.financeiro">Fator Financeiro(%):</label>
+                <input name='fator.financeiro' id='fator.financeiro' type="number" placeholder="0%"
+                    style="width: 40px;">
+
+                <label for="fator.adicional">Fator adicional(%):</label>
+                <input name='fator.adicional' id='fator.adicional' type="number" placeholder="0%" style="width: 40px;">
+
+                <label for="data.solicitacao">Data da Solicitação:</label>
+                <input name='data.solicitacao' id='data.solicitacao' type="number" placeholder="12/12/2024"
+                    style="width: 100px;">
+            </div>
+
+            <div style="flex: 1 1 100%;">
+                <label for="descricao.item">Descrição do Item:</label>
+                <input name='descricao.item' id='descricao.item' type='text' placeholder="Disco de Corte"
+                    style="width: 330px;">
+
+                <label for="Referencia.item">Referência do Item:</label>
+                <input name='Referencia.item' id='Referencia.item' type='text' placeholder="BNA12"
+                    style="width: 100px;">
+
+                <label for="fabricante.item">Fabricante do Item:</label>
+                <input name='fabricante.item' id='fabricante.item' type='text' placeholder="Norton"
+                    style="width: 100px;">
+
+                <label for="unidade.medida">Unidade de Medida:</label>
+                <input name='unidade.medida' id='unidade.medida' type="text" placeholder="cx/und/sc/gl/rl/ct"
+                    style="width: 100px;">
+
+            </div>
+
+            <div style="flex: 1 1 100%;">
+
+                <label for="Quantidade.item">Quantidade Item:</label>
+                <input name='Quantidade.item' id='Quantidade.item' type="number" placeholder="100" style="width: 40px;">
+
+                <label for="valor.unitario">Valor Unitário(R$):</label>
+                <input name='valor.unitario' id='valor.unitario' type="number" placeholder="25.90" style="width: 70px;">
+
+                <label for="valor.total">Valor Total(R$):</label>
+                <input name='valor.total' id='valor.total' type="number" placeholder="250.90" style="width: 70px;">
+
+                <label for="ncm">NCM:</label>
+                <input name='ncm' id='ncm' type="number" placeholder="789255633584" style="width: 100px;">
+
+                <label for="icms">ICMS:</label>
+                <input name='icms' id='icms' type="number" placeholder="0%, 4%, 7%, 12%, 20.5%" style="width: 180px;">
+
+                <label for="ipi">IPI:</label>
+                <input name='ipi' id='ipi' type="number" placeholder="10%" style="width: 50px;">
+
+            </div>
+
+            <div style="flex: 1 1 100%;">
+
+                <label for="origem.item">Nacional ou Importado?:</label>
+                <input name='origem.item' id='origem.item' type="text" placeholder="Nacional" style="width: 70px;">
+
+                <label for="st">ST Destacado na NF:</label>
+                <input name='st' id='st' type="text" placeholder="Sim ou Não" style="width: 80px;">
+
+                <label for="frete">Frete CIF ou FOB?:</label>
+                <input name='frete' id='frete' type="text" placeholder="CIF" style="width: 40px;">
+
+                <label for="frete.valor">Valor do Frete:</label>
+                <input name='frete.valor' id='frete.valor' type="number" placeholder="R$ 500.00 ou 5%"
+                    style="width: 135px;">
+
+            </div>
+
+            <div style="flex: 1 1 100%;">
+
+                <label for="reducao.icms">Redução na Base de ICMS?:</label>
+                <input name='reducao.icms' id='reducao.icms' type="text" placeholder="sim ou não?" style="width: 80px;">
+
+                <label for="reducao.icms.final">ICMS final após Redução:</label>
+                <input name='reducao.icms.final' id='reducao.icms.final' type="number" placeholder="7%"
+                    style="width: 45px;">
+
+                <label for="fat.min.fornecedor">Faturamento Mínimo Fornecedor:</label>
+                <input name='fat.min.fornecedor' id='fat.min.fornecedor' type="number" placeholder="R$ 2000.00"
+                    style="width: 90px;">
+
+                <label for="emb.min.item">Embalagem mínima Item:</label>
+                <input name='emb.min.item' id='emb.min.item' type="text" placeholder=" 10 peças" style="width: 100px;">
+
+            </div>
+
+            <div style="flex: 1 1 100%;">
+
+                <label for="estoque.fornecedor">Fornecedor tem de imediato na Fábrica?:</label>
+                <input name='estoque.fornecedor' id='estoque.fornecedor' type="text" placeholder="Sim"
+                    style="width: 30px;">
+
+                <label for="prazo.entrega.fornecedor">Prazo de entrega Fornecedor(Dias úteis):</label>
+                <input name='prazo.entrega.fornecedor' id='prazo.entrega.fornecedor' type="number" placeholder="10"
+                    style="width: 30px;">
+
+            </div>
+
+            <div style="flex: 1 1 100%;">
+                <label for="observacao">Observações Gerais:</label>
+                <input name='observacao' id='observacao' type="text" placeholder="Digite outras informações importantes"
+                    style="width: 1000px;">
+
+            </div>
+
+            <button type="reset">Resetar</button>
+            <button type="submit">Enviar</button>
+
+        </form>
